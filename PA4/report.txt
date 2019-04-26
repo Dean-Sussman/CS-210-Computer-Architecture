@@ -1,0 +1,7 @@
+Because a cache is an array of sets, which is an array of cache lines, I mainly used two data structures in my project. I created an array of linked lists, using a 'cacheLine' struct. Each node in the list had the properties 'tag', for the block's tag, 'valid', for the block's valid bit, 'time', to keep track of which block to replace with the replacement policy, and 'next', to allow linking.
+
+I declared the cache as an array of linked lists because this allowed me to access each row of the array as if I was accessing different sets of a cache, with any given row representing a different set. Each set was a linked list because creating and using a linked list of structs was easier for me to visualize and use than an array of structs was; either would have been fine. 
+
+The prefetcher increased both the number of memory reads and the number of cache hits. It increased the number of cache hits by better using spatial locality. The prefetcher takes advantage of the fact that, when a user accesses a part of memory, they tend to then access another part of memory nearby. However, in order to accomplish this, it had to read that extra block in from memory, which increases the number of memory reads.
+
+I implemented the LRU policy with the same structures I implemented the FIFO policy with. 

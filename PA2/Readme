@@ -1,0 +1,5 @@
+First -- Sudoku solver for easily solveable matrices (no guessing required)
+
+Second -- Sudoku solver for any solveable matrix, using backtracking
+
+Third -- One-shot learning algorithm to mimic prediction of future prices in an area; matrix multiplication and Gauss-Jordan elimination

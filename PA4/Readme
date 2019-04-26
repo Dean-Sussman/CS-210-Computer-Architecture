@@ -1,0 +1,1 @@
+Simulates the behavior of a cache, using either the First-In-First-Out or Least-Recently-Used replacement policies.
